@@ -136,6 +136,11 @@ ul {
   height: 509px;
   position: absolute;
   transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(./img/image.png);
 }
 
 .slide img {
