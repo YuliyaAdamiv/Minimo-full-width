@@ -6,6 +6,7 @@
 }
 header {
   margin: 70px 73px;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -19,10 +20,10 @@ ul {
 }
 .menu li {
   flex: 1 1 auto;
-  margin: 0 58px;
+  margin: 0 46px;
   font-size: 14px;
   font-family: 'PlayfairDisplay';
-  color: rgb(98, 98, 98);
+  color: rgb(180, 173, 158);
   text-transform: uppercase;
   line-height: 1.714;
 }
@@ -30,7 +31,6 @@ ul {
   padding-top: 75px;
 }
 .container {
-  max-width: 1065px;
   padding: 0 11% 100px 11%;
 }
 .photodiary-title {
@@ -74,14 +74,22 @@ ul {
 }
 .share div {
   margin-right: 10px;
-  color: #626262;
+  color: #b6b3ac;
 }
 .share p {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .sign-up {
   padding: 70px 112px 70px 125px;
   background: #f0f0f0;
+}
+.may {
+  font-size: 14px;
+  font-family: 'Ubuntu';
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 5px 0 20px 0;
 }
 .cards {
   display: flex;
@@ -231,7 +239,7 @@ input::placeholder {
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .photodiary {
-    padding: 60px 11% 10px 8%;
+    padding-top: 20px;
     width: 100%;
   }
   .sign-up div {
@@ -257,7 +265,7 @@ input::placeholder {
   }
   .menu li {
     flex: 1 1 auto;
-    margin: 0 2px;
+    margin: 0 7px;
   }
   .menu {
     margin-top: 50px;
@@ -284,24 +292,28 @@ input::placeholder {
   }
   footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .footer-left,
   .footer-right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
   }
-  .footer-right {
-    margin-left: -25%;
+  .may {
+    text-align: center;
+  }
+
+  footer {
+    padding: 35px 20px 36px 20px;
+  }
+  footer div {
+    margin-right: 10px;
   }
 }
 @media (min-width: 480px) and (max-width: 575px) {
   .photodiary {
-    padding: 60px 11% 10px 8%;
+    padding-top: 20px;
   }
   .sign-up div {
     margin-right: 0px;
@@ -338,6 +350,9 @@ input::placeholder {
   .aside {
     display: none;
   }
+  .may {
+    text-align: center;
+  }
   .slider {
     width: 90vw;
   }
@@ -358,7 +373,7 @@ input::placeholder {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .photodiary {
-    padding: 60px 11% 10px 8%;
+    padding-top: 20px;
   }
   .cards {
     display: flex;
@@ -382,6 +397,9 @@ input::placeholder {
   .photodiary {
     text-align: center;
   }
+  .may {
+    text-align: center;
+  }
   .slider {
     width: 90vw;
   }
@@ -401,7 +419,7 @@ input::placeholder {
 }
 @media (min-width: 768px) and (max-width: 978px) {
   .photodiary {
-    padding: 60px 11% 10px 8%;
+    padding-top: 20px;
   }
   .sign-up {
     padding: 50px 90px 70px 90px;
@@ -448,13 +466,4 @@ img {
   height: auto;
   vertical-align: middle;
   border: 0;
-}
-h4,
-h5 {
-  margin: 10px 0;
-  text-rendering: optimizelegibility;
-}
-.container {
-  margin-right: auto;
-  margin-left: auto;
 }
